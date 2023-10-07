@@ -1,20 +1,15 @@
 a = []
-for i in range(4):
-    x = input().split()
-    y, z = *x
-    a.append(y)
-    a.append(z)
 
-print(a)
+for n in range(4):
+    a.extend(input("Input? " ).split())
 
 b = []
 c = []
-
-for j in range(8):
-    if j % 2 == 0:
-        b.append(a[j])
+for i in range(8):
+    if i % 2 == 0:
+        b.append(a[i])
     else:
-        c.append(a[j])
+        c.append(a[i])
 
-print(f'Color : {b}') 
-print(f'Animal : {c}') 
+print(f'Color: {b}')
+print(f'Animal: {c}')
